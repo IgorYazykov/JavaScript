@@ -12,7 +12,7 @@ if (StartTest === true){
     else {}
 
     AnswerTwo = prompt (`Чему равно число ПИ`);
-    if (AnswerTwo == 3,14){
+    if (AnswerTwo == 3.14){
         points += 10;
         TrueAnswer ++;
     } 
@@ -20,7 +20,7 @@ if (StartTest === true){
     else {}
 
     AnswerThree = prompt (`чему равна скорость свободного падения?(округленно)`);
-    if (AnswerThree == 9,8){
+    if (AnswerThree == 9.8){
         points += 10;
         TrueAnswer ++;
     } 
@@ -47,7 +47,6 @@ if (StartTest === true){
     if (AnswerSix == null){}
     else{
         AnswerSix=AnswerSix.toLowerCase();
-        console.log(AnswerSix);
         if (AnswerSix == "арбуз"){
             points += 10;
             TrueAnswer ++;
