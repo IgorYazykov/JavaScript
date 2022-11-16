@@ -4,7 +4,6 @@ do{
 
 disorderedArray = [LengthOfAray];
 orderedArray = [];
-delitedValueArray = [];
 
 document.write(`оригенальный масив <br>`);
 
