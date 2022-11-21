@@ -1,4 +1,4 @@
-color = ['red', 'Orange', 'yellow', 'green', 'blue', 'purple', 'violet']
+color = ['red', 'Orange', 'yellow', 'green', 'rgb(102, 161, 216)', 'rgb(67, 67, 155)', 'rgb(146, 33, 146)']
 hero = ['Ivan'];
 native = ['York','Of'];
 destination = ['Poltava','In'];
