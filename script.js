@@ -4,14 +4,12 @@ native = ['York','Of'];
 destination = ['Poltava','In'];
 
 rainbow = destination.concat(native, hero);
-console.log (rainbow );
 
 rainbow = rainbow.reverse();
 rainbow.splice (0, 1, 'Richard');
 rainbow.splice (3, 0, 'Gave');
 rainbow.splice (4, 0, 'Battle');
 rainbow.splice (6, 1, 'Vain');
-console.log (rainbow );
 
 for (i=0; i < rainbow.length; i++){
     document.write(`
