@@ -5,10 +5,15 @@ do {
 document.write(`оригинальный массив: <br>`);
 array=[];
 
+// for ( i=0 ; i < quantity ; i++ ){
+//     do{
+//         array[i] = prompt(`Введите ${i+1} элемент массива: `)
+//     } while (isNaN(array[i]));
+//     document.write(`${array[i]}   `);
+// }
+
 for ( i=0 ; i < quantity ; i++ ){
-    do{
-        array[i] = prompt(`Введите ${i+1} элемент массива: `)
-    } while (isNaN(array[i]));
+    array[i] = Math.round(Math.random() * 100);
     document.write(`${array[i]}   `);
 }
 
