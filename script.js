@@ -58,9 +58,9 @@ finder.forEach(function(item){
 });
 let maxInd = finder.indexOf(max);
 
-finder.forEach(function(item){
+finder.forEach(function(item,i){
     if (finder.indexOf(item) != maxInd){
-        item = 0;
+        finder[i] = 0; 
     }
 });
 
@@ -78,4 +78,6 @@ console.log(`
     Сумма непарных позитивных элементво: ${SumUnpairedPos}
     Произведение позитивных элементов: ${Dob}
     Найбольший элемент: ${max}
+    Обнульований масив: 
+    ${finder}
 `);
