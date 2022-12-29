@@ -48,4 +48,4 @@ class SuperMath {
 
 const Example = new SuperMath (10, 5 , "/");
 
-console.log(Example.check());
+alert(`Результат ${Example.check()}`);
