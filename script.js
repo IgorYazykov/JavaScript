@@ -1,51 +1,38 @@
+const OPERATION = {
+    "+": function (x, y) { return x + y},
+    "-": function (x, y) { return x - y},
+    "*": function (x, y) { return x * y},
+    "/": function (x, y) { return x / y},
+    "%": function (x, y) { return x % y}
+};
+
 class SuperMath {
-    constructor (X, Y, znak){
-        this.X = X;
-        this.Y = Y;
-        this.znak = znak
+    constructor (){
     }
 
     check(){
-        let sogl = confirm("хотите ввести свои данные?");
+        let sogl = confirm(`Введенные данные: ${this.X} ${this.znak} ${this.Y}. Хотите что-то изменить?`);
         if (sogl == true){
             return(this.input());
         } 
-        return(this.MathOperat());
+        return OPERATION[this.znak](this.X , this.Y);
     }
 
     input(){
-        this.X = +prompt("введите первое число ");
-        this.Y = +prompt("введите второе число ");
+        do{
+            this.X = +prompt("введите первое число ");
+        } while (isNaN(this.X));
+        do{
+            this.Y = +prompt("введите второе число ");
+        }while (isNaN(this.Y));
         do{
             this.znak = prompt("введите знак ");
-            let proverka = this.znak;
-        } while (this.proverka == "+" || this.proverka == "-" || this.proverka == "*" || this.proverka == "/" || this.proverka == "%");
+        } while (!OPERATION[this.znak]);
 
-        return this.MathOperat();
-    }
-
-    MathOperat(){
-        let res = 0;
-        switch (this.znak){
-            case "+":
-                res = this.X+ + this.Y;
-                break;
-            case "-":
-                res = this.X - this.Y;
-                break;
-            case "*":
-                res = this.X * this.Y;
-                break;
-            case "%":
-                res = this.X % this.Y;
-                break;
-            default:
-                res = this.X / this.Y;
-        }
-        return res;
+        return this.check(OPERATION[this.znak](this.X , this.Y));
     }
 }
 
-const Example = new SuperMath (10, 5 , "/");
+const obj = new SuperMath();
 
-alert(`Результат ${Example.check()}`);
+alert(`Результат ${obj.input()}`);
