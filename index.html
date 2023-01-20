@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="form">
+        <input id="name" type="text" placeholder="Имя">
+        <input id="secondName" type="text" placeholder="Фамилия">
+        <input id="date" type="text" placeholder="дата рождения">
+        <div class="radio_container">
+            <input type="radio" name="gender" class="gender" value="Мужчина">Man
+            <input type="radio" name="gender" class="gender" value="Женщина">Woman
+        </div>
+        <select id="town">
+            <option value="Харьков">Харьков</option>
+            <option value="Днепр">Днепр</option>
+            <option value="Киев">Киев</option>
+            <option value="Львов">Львов</option>
+        </select>
+        <input id="address" type="text" placeholder="Адрес">
+        <div class="language_container">
+            <label>
+                <input name="language" id="english" type="checkbox" value="Английский язык">
+                Английский язык
+            </label>
+            <label>
+                <input name="language" id="ukrainian" type="checkbox" value="Украинский язык">
+                Украинский язык
+            </label>
+            <label>
+                <input name="language" id="russian" type="checkbox" value="Русский язык">
+                Русский язык
+            </label>
+            <label>
+                <input name="language" id="french" type="checkbox" value="Французкий язык">
+                Французкий язык
+            </label>
+        </div>
+        <button id="button">Отправить форму</button>
+    </form>
+    <div class="table_container display">
+        <button id="close">закрыть</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
