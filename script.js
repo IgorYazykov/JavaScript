@@ -8,10 +8,8 @@ const pButton2 = document.createElement("p");
 
 let imgCounter = 5;
 pButton1.innerText = "<"
-// buttonPrev.innerText = "<";
 buttonPrev.setAttribute("id",'1');
 pButton2.innerText = ">";
-// buttonNext.innerText = ">";
 buttonNext.setAttribute("id",'2');
 buttonPrev.classList.add("button");
 buttonNext.classList.add("button");
