@@ -5,6 +5,8 @@ const slider = document.createElement("img");
 const buttonNext = document.createElement("div");
 const pButton1 = document.createElement("p");
 const pButton2 = document.createElement("p");
+const constructionDiv1 = document.createElement("div");
+const constructionDiv2 = document.createElement("div");
 
 let imgCounter = 5;
 pButton1.innerText = "<"
@@ -16,10 +18,14 @@ buttonNext.classList.add("button");
 slider.classList.add("slid");
 slider.setAttribute("src",`img/${imgCounter}.png`)
 
-body.append(buttonPrev);
-buttonPrev.append(pButton1);
+body.append(constructionDiv1);
 body.append(slider);
-body.append(buttonNext);
+body.append(constructionDiv2);
+constructionDiv1.append(buttonPrev);
+constructionDiv2.append(buttonNext);
+constructionDiv1.classList.add("helping_size");
+constructionDiv2.classList.add("helping_size");
+buttonPrev.append(pButton1);
 buttonNext.append(pButton2);
 
 function slide (button){
