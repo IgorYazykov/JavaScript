@@ -261,7 +261,10 @@ function confirmActivated(button, info){
 
 function confirtmInfo(arr,constArr,errors,location,i){
     if(i == 6){
-        if(isNaN(arr)){
+        if (arr == '') {
+            errors.push("Это поле не может быть пустым!");
+            location.push(constArr);
+        }else if(isNaN(arr)){
             errors.push("Вы не ввели количествопокупаемого товара.");
             location.push(constArr);
         };
