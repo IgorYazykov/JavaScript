@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    width: 400px;
+    height: auto;
+    border: 3px solid green;
+    border-radius: 15px;
+}
+
+.button{
+    text-align: center;
+    width: 200px;
+    height: 40px;;
+    background-color: aquamarine;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.button>p{
+    margin: 0;
+}
+
+.blockComment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid greenyellow;
+}
+
+#left_block{
+    width: 50%;
+    height: 100%;
+}
+
+#right_block{
+    width: 50%;
+    height: 100%;
+}
