@@ -1,0 +1,12 @@
+#container{
+    width: 250px;
+    height: auto;
+    margin: 10px;
+    background-color: cornsilk;
+    padding: 5px;
+    border: solid goldenrod;
+}
+
+body{
+    display: flex;
+}
